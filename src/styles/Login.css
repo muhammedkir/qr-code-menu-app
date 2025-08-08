@@ -1,0 +1,32 @@
+.login-page-bg {
+    height: 100vh;
+    position: relative; /* Arka planı karartmak için gerekli */
+}
+
+/* Arka planı karartmak için overlay (kaplama) */
+.login-page-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* %50 siyah kaplama */
+    z-index: 1; /* Diğer içeriklerin arkasında kalmasını sağlar */
+}
+
+/* Login kartının ve metinlerinin okunabilirliğini sağlamak için z-index'ini artırın */
+.login-card {
+    position: relative;
+    z-index: 2; /* Kaplamanın üstünde kalması için */
+    background-color: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.login-title,
+.form-label,
+.text-muted {
+    color: #2c3e50; /* Metin rengini karartılmış arkaplanda daha belirgin hale getirin */
+}

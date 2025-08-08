@@ -1,0 +1,16 @@
+.card {
+  border-radius: 12px;
+}
+
+.card h4 {
+  font-weight: bold;
+  font-size: clamp(18px, 3vw, 28px);
+}
+
+label {
+  font-weight: 500;
+}
+
+input, select, textarea {
+  font-size: 1rem;
+}

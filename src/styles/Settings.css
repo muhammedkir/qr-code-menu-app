@@ -1,0 +1,14 @@
+.settings-container {
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card .btn {
+  float: right;
+}
+
+.responsive-text {
+  font-size: clamp(14px, 2vw, 20px);
+}

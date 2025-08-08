@@ -1,0 +1,81 @@
+/* src/styles/CreateBranch.css */
+
+/* Genel kapsayıcı ve form stili */
+.create-branch-container {
+    padding: 2rem 1rem;
+}
+
+.create-branch-card {
+    background-color: #fff;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Hafif ve modern bir gölge */
+    padding: 2.5rem;
+}
+
+/* Başlık */
+.create-branch-card h2 {
+    font-weight: 700;
+    color: #2c3e50; /* Koyu, profesyonel bir metin rengi */
+    margin-bottom: 2rem;
+}
+
+/* Form etiketleri */
+.form-label {
+    font-weight: 600;
+    color: #555;
+}
+
+/* Form kontrolleri (inputlar) */
+.form-control {
+    border-color: #d1d5db; /* Daha yumuşak bir kenar rengi */
+    border-radius: 8px; /* Daha yumuşak köşeler */
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Odaklandığında mavi ton */
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Hafif ve yumuşak bir dış gölge */
+}
+
+/* Butonlar */
+.btn-success {
+    background-color: #28a745; /* Bootstrap'in default success rengi */
+    border-color: #28a745;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem; /* Daha büyük ve dolgun buton */
+    border-radius: 8px; /* Butona da yumuşak köşeler */
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(40, 167, 69, 0.2); /* Hafif bir gölge */
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3); /* Daha belirgin bir gölge */
+}
+
+/* Uyarı mesajları */
+.alert {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+/* Mobil için responsive ayarlar */
+@media (max-width: 768px) {
+    .create-branch-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .create-branch-card h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .create-branch-card {
+        padding: 1rem;
+    }
+}
+

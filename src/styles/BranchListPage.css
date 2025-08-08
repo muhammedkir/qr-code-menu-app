@@ -1,0 +1,41 @@
+/* Branch kartları */
+.branch-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.branch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+  background-color: #f8f9fa;
+}
+
+/* Şube oluşturma butonu */
+.create-branch-btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.responsive-text {
+  font-size: clamp(14px, 2vw, 20px);
+}
+
+.create-branch-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.branch-logo-expanded {
+    position: absolute;
+    top: -10px; /* Üstten biraz dışarıda durması için negatif değer */
+    right: -10px; /* Sağdan biraz dışarıda durması için negatif değer */
+    z-index: 10;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
